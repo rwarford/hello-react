@@ -4,6 +4,8 @@
   "description": "This tutorial is adapted from https://appdividend.com/2017/03/29/beginners-guide-to-setup-react-v15-4-2-environment/ and https://www.valentinog.com/blog/webpack/.",
   "main": "index.js",
   "scripts": {
+    "dev_build": "webpack --mode development ./src/index.js",
+  "dev_server": "webpack-dev-server --mode development ./src/index.js --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
