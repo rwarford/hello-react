@@ -1,4 +1,6 @@
 # Setup a Simple React Environment
+*Note: If you want to skip the tutorial and just set up a basic app, skip down to [Quick Start](#quick-start).*
+
 This tutorial is adapted from https://appdividend.com/2017/03/29/beginners-guide-to-setup-react-v15-4-2-environment/ and https://www.valentinog.com/blog/webpack/.
 
 **Prerequisites**: Node.js must be installed.
@@ -286,3 +288,28 @@ npm run dev_server
 ```
 
 A browser window should open and you should see the message from the app.
+
+## Quick Start
+
+If you just want to get started quickly, run the following commands:
+
+```bash
+mkdir -p hello-react/src
+cd hello-react
+npm init -y
+npm install --save-dev \
+  webpack webpack-cli webpack-dev-server \
+  html-webpack-plugin html-loader \
+  @babel/core babel-loader \
+  @babel/preset-react @babel/preset-env
+npm install react --save react react-dom
+```
+
+Add the scripts to package.json:
+
+```json
+"dev_build": "webpack --mode development ./src/index.js",
+"dev_server": "webpack-dev-server --mode development ./src/index.js --open",
+ ```
+
+Then copy `App.js`, `index.html`, `index.js`, .`babelrc`, and `webpack.config.js` from this project.
