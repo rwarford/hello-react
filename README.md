@@ -97,7 +97,7 @@ Add the following scripts to package.json:
 
 ```json
 "dev_build": "webpack --mode development ./src/index.js",
-"dev_server": "webpack-dev-server --mode development ./src/index.js --open",
+"dev_server": "webpack-dev-server --mode=development --devtool=inline-source-map --history-api-fallback ./src/index.js --open"
  ```
 Your package.json file should look like the following:
 ```json
@@ -108,7 +108,7 @@ Your package.json file should look like the following:
   "main": "index.js",
   "scripts": {
     "dev_build": "webpack --mode development ./src/index.js",
-    "dev_server": "webpack-dev-server --mode development ./src/index.js --open",
+    "dev_server": "webpack-dev-server --mode=development --devtool=inline-source-map --history-api-fallback ./src/index.js --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
