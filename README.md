@@ -302,7 +302,7 @@ npm install --save-dev \
   html-webpack-plugin html-loader \
   @babel/core babel-loader \
   @babel/preset-react @babel/preset-env
-npm install react --save react react-dom
+npm install --save react react-dom
 ```
 
 Add the scripts to package.json:
