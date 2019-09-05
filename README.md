@@ -309,7 +309,7 @@ Add the scripts to package.json:
 
 ```json
 "dev_build": "webpack --mode development ./src/index.js",
-"dev_server": "webpack-dev-server --mode development ./src/index.js --open",
+"dev_server": "webpack-dev-server --mode=development --devtool=inline-source-map --history-api-fallback ./src/index.js --open"
  ```
 
 Then copy `App.js`, `index.html`, `index.js`, .`babelrc`, and `webpack.config.js` from this project.
